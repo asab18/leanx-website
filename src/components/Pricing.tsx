@@ -16,6 +16,7 @@ export default function Pricing() {
                     </p>       
                 </div>
                 <div className="flex flex-col w-full lg:max-w-[85%] justify-self-center lg:grid lg:grid-cols-2 gap-8 lg:gap-20">
+                    {/* TODO remove after redesign */}
                     <div className="overflow-hidden border border-[#5FC7CD] rounded-xl shadow-md">
                         <table className="w-full">
                             <thead className="bg-[#5FC7CD]">
@@ -28,10 +29,10 @@ export default function Pricing() {
                                     <td className="pt-2 pb-12 px-6">
                                         <br/>
                                         <span className="tbl-title">Setup Fee</span> <br/>
-                                        <span className="tbl-content">Free</span> <br/> <br/>
+                                        <span className="tbl-title">Free</span> <br/> <br/>
 
                                         <span className="tbl-title">Yearly Fee</span> <br/>
-                                        <span className="tbl-content">Free</span> <br/> <br/>
+                                        <span className="tbl-title">Free</span> <br/> <br/>
 
                                         <span className="tbl-title">Payment Channels</span> <br/>
                                         <span className="flex flex-row flex-wrap gap-4 mt-2">
@@ -45,13 +46,14 @@ export default function Pricing() {
 
                                         <span className="tbl-title">Transaction Fee Rates</span> <br/>
                                         <ul className="list-disc ml-6">
-                                            <li className="tbl-content">FPX (B2C): RM1.50</li>
-                                            <li className="tbl-content">E-wallets: 1.70%</li>
+                                            <li className="tbl-title">FPX (B2C): RM1.50</li>
+                                            <li className="tbl-title">FPX (B2B): RM2.00</li>
+                                            <li className="tbl-title">E-wallets: 1.70%</li>
                                         </ul>
 
                                         <br/>
                                         <span className="tbl-title">Settlement</span> <br/>
-                                        <span className="tbl-content">Transaction Date + 1 Day</span> <br/>
+                                        <span className="tbl-title">Transaction Date + 1 Day</span> <br/>
                                         
                                         <span className="ita-text-purple">(Including weekends and public holidays)</span> <br/>
                                     </td>
@@ -71,10 +73,10 @@ export default function Pricing() {
                                     <td className="pt-2 pb-12 px-6">
                                         <br/>
                                         <span className="tbl-title">Setup Fee</span> <br/>
-                                        <span className="tbl-content">RM250</span> <br/> <br/>
+                                        <span className="tbl-title">RM250</span> <br/> <br/>
 
                                         <span className="tbl-title">Yearly Fee</span> <br/>
-                                        <span className="tbl-content">Free</span> <br/> <br/>
+                                        <span className="tbl-title">Free</span> <br/> <br/>
 
                                         <span className="tbl-title">Payment Channels</span> <br/>
                                         <span className="flex flex-row flex-wrap gap-4 mt-2">
@@ -90,15 +92,15 @@ export default function Pricing() {
 
                                         <span className="tbl-title">Transaction Fee Rates</span> <br/>
                                         <ul className="list-disc ml-6">
-                                            <li className="tbl-content">Visa & Mastercard: 2.00%</li>
-                                            <li className="tbl-content">FPX (B2C): RM1.00</li>
-                                            <li className="tbl-content">FPX (B2B): RM1.50</li>
-                                            <li className="tbl-content">E-wallets: 1.50%</li>
+                                            <li className="tbl-title">Visa & Mastercard: 2.00%</li>
+                                            <li className="tbl-title">FPX (B2C): RM1.00</li>
+                                            <li className="tbl-title">FPX (B2B): RM1.50</li>
+                                            <li className="tbl-title">E-wallets: 1.50%</li>
                                         </ul>
 
                                         <br/>
                                         <span className="tbl-title">Settlement</span> <br/>
-                                        <span className="tbl-content">Transaction Date + 1 Day</span> <br/> 
+                                        <span className="tbl-title">Transaction Date + 1 Day</span> <br/> 
 
                                         <span className="ita-text-purple">(Including weekends and public holidays)</span>
                                         <br/>

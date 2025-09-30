@@ -16,7 +16,7 @@ export default function Dashboard() {
                     </div>
                     <p className="heading-purple">Manage Your Payment Collection Effectively</p>
                     <p className="light-text">
-                        Super-charge your business management with {BRANDING.leanx}&apos; powerful real-time dashboard. Equipped with detailed information which will enhance your ability to create effective, high-quality and strategic business  decisions.
+                        Super-charge your business management with {BRANDING.leanx}&apos;s powerful real-time dashboard. Equipped with detailed information which will enhance your ability to create effective, high-quality and strategic business  decisions.
                     </p>
                 </div>
             </div>

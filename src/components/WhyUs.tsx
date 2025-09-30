@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BRANDING } from "@/constants/branding";
+import { MESSAGES } from "@/constants/messages";
 
 export default function WhyUs() {
     return (
@@ -80,18 +81,31 @@ export default function WhyUs() {
                 <div className="container sp two-cols">
                     <div>
                         <p className="heading text-white">Ready to get started?</p>
-                        <p className="light-text-white">
-                            Explore {BRANDING.leanx} producs, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business.
+                        <p className="light-text-white mb-4">
+                            Explore {BRANDING.leanx} products, or create an account instantly and start accepting payments.
                         </p>
                     </div>
-                    <div className="my-auto justify-self-end">
-                        <Link 
-                            href={`mailto:${BRANDING.salesEmail}?subject=Lean.x%20Sales%20Inquiry&body=Hello%20Lean.x%20Team,`}
-                            className="btn-sec-inv"
-                        >
-                            Contact Sales
-                        </Link>
-                    </div>  
+                    <div className="flex flex-row flex-wrap justify-self-end gap-12 md:gap-6 my-auto">
+                        <div>
+                            <Link 
+                                href={`mailto:${BRANDING.salesEmail}?${MESSAGES.emailSales}`}
+                                className="btn-sec-inv"
+                                target="_blank"
+                            >
+                                Email Sales
+                            </Link>
+                        </div>  
+                        <div>
+                            <Link 
+                                href={`${BRANDING.supportPhone}?${MESSAGES.wsSales}`}
+                                className="btn-sec-inv"
+                                target="_blank"
+                            >
+                                Whatsapp Sales
+                            </Link>
+                        </div> 
+                    </div>
+                    
                 </div>
             </div>
         </section>

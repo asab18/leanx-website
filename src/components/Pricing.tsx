@@ -65,7 +65,7 @@ export default function Pricing() {
                                 <tr>
                                     <th className="med-text-white py-2">GROWTH</th>
                                 </tr>
-                            </thead>
+                            </thead> 
                             <tbody>
                                 <tr>
                                     <td className="pt-2 pb-12 px-6">

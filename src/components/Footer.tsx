@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LINKS } from "@/constants/links";
 import { BRANDING } from "@/constants/branding";
+import { MESSAGES } from "@/constants/messages";
 
 export default function Footer() {
     return (
@@ -22,10 +23,18 @@ export default function Footer() {
                 <div className="justify-self-end">
                     <div className="flex flex-col space-y-3">
                         <p className="med-text-yellow">Get in Touch</p>
-                        <Link href={`mailto:${BRANDING.supportEmail}?subject=Lean.x%20Support%20Inquiry&body=Hello%20Lean.x%20Team,`} target="_blank" className="med-text-white">
+                        <Link 
+                            href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailSupport}`} 
+                            target="_blank" 
+                            className="med-text-white"
+                        >
                             Via Email
                         </Link> 
-                        <Link href={`${BRANDING.supportPhone}?text=Hello%20Lean.x%20Team,%20I%20need%20assistance.`} target="_blank" className="med-text-white">
+                        <Link 
+                            href={`${BRANDING.supportPhone}?${MESSAGES.wsSupport}`} 
+                            target="_blank" 
+                            className="med-text-white"
+                        >
                             Via Whatsapp
                         </Link>
                         <br/>
@@ -36,7 +45,6 @@ export default function Footer() {
 
                         <p className="med-text-yellow">Developer</p>
                         <Link href={LINKS.apiDocs} target="_blank" className="med-text-white">API Reference</Link>
-                        <br/>
 
                         <div className="lg:hidden">
                             <p className="med-text-yellow mb-3">Others</p>

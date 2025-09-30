@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-rubik);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply max-w-[1500px] justify-self-center my-auto
+}
+
+.sp {
+  @apply py-7 px-12 lg:py-14 md:px-24
+}
+
+.heading {
+  @apply text-3xl font-light my-auto my-2
+}
+
+.heading-purple {
+  @apply text-3xl font-light text-[#8273B5] my-2
+}
+
+.title {
+  @apply text-base font-normal text-[#5FC7CD]
+}
+
+.light-text {
+  @apply text-base text-[#383838] font-light leading-relaxed space-y-6 mb-4
+}
+
+.light-text-white {
+  @apply text-base text-white font-light leading-relaxed space-y-6 
+}
+
+.reg-text {
+  @apply text-base text-[#383838] font-normal
+}
+
+.reg-text-purple {
+  @apply text-base text-[#8273B5] font-normal transition transform duration-200 ease-in
+}
+
+.reg-text-purple:hover {
+  @apply -translate-y-1 text-[#5a478f]
+}
+
+.reg-text-cyan {
+  @apply text-base text-[#5FC7CD] font-normal pr-8 transition transform duration-200 ease-in
+}
+
+.reg-text-cyan:hover {
+  @apply -translate-y-0.5 text-[#FFCE33] 
+}
+
+.med-text-white {
+  @apply text-base font-medium text-white whitespace-nowrap
+}
+
+.med-text-yellow {
+  @apply text-base font-medium text-[#FFCE33]
+}
+
+.ita-text-purple {
+  @apply text-base italic font-normal text-[#8273B5] 
+}
+
+.btn-pri {
+  @apply text-base font-medium text-white bg-[#8273B5] border border-[#8273B5] rounded-lg shadow-md px-6 py-4 whitespace-nowrap text-center transition transform duration-200 ease-in
+}
+
+.btn-pri:hover, .btn-sec-inv:hover {
+  @apply bg-white text-[#5FC7CD] border border-[#5FC7CD] 
+}
+
+.btn-sec {
+  @apply text-base font-medium text-[#8273B5] bg-white border border-[#8273B5] rounded-lg shadow-md px-6 py-4 whitespace-nowrap text-center transition transform duration-200 ease-in
+}
+
+.btn-sec:hover, .btn-pri-inv:hover  {
+  @apply bg-[#5FC7CD] text-white border border-[#5FC7CD]
+}
+
+.btn-pri-inv {
+  @apply text-base font-medium text-[#8273B5] bg-white border border-white rounded-lg shadow-md px-6 py-4 whitespace-nowrap text-center transition transform duration-200 ease-in
+}
+
+.btn-sec-inv {
+  @apply text-base font-medium text-white bg-[#8273B5] border border-white rounded-lg shadow-md px-6 py-4 whitespace-nowrap text-center transition transform duration-200 ease-in
+}
+
+.two-cols {
+  @apply flex flex-col lg:grid lg:grid-cols-2 gap-4
+}
+
+.two-cols-r {
+  @apply flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4
+}
+
+.tbl-title { 
+  @apply text-base text-[#455263] font-normal
+}
+
+.tbl-content {
+  @apply text-2xl text-[#455263] font-normal
+}
+
+.menu-items {
+  @apply flex justify-center md:justify-start place-items-center px-8 py-3 md:py-4 gap-4 
+}
+
+
+
+
+
+
